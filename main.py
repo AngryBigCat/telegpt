@@ -232,7 +232,7 @@ async def start_private_chat(update: Update, context: ContextTypes.DEFAULT_TYPE)
 def main() -> None:
     """Start the bot."""
     # Create the Application and pass it your bot's token.
-    application = Application.builder().token("6241720862:AAHo1nUnhNaBipEDGZM3_WnpslFGYpKk4jw").build()
+    application = Application.builder().base_url("https://tgapi.wegpt.me/bot").token("6241720862:AAHo1nUnhNaBipEDGZM3_WnpslFGYpKk4jw").build()
 
     # Keep track of which chats the bot is in
     application.add_handler(ChatMemberHandler(track_chats, ChatMemberHandler.MY_CHAT_MEMBER))
